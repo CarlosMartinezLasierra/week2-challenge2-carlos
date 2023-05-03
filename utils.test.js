@@ -12,4 +12,8 @@ describe("checkObjectIsEquality", () => {
     const result = checkIfIsEquality(false, false);
     expect(result).toBe(true);
   });
+  test("returns false for numeric and string equality", () => {
+    const result = checkIfIsEquality(5, "i");
+    expect(result).toBe(false)
+  });
 });
