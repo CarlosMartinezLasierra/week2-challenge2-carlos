@@ -1,8 +1,3 @@
-let valueA ()
-let valueB ()
-console.log(object.is(valueA, valueB));
-console.log(object.is(valueA, valueB));
-console.log(object.is(valueA, valueB));
-console.log(object.is(valueA, valueB));
-console.log(object.is(valueA, valueB));
-console.log(object.is(valueA, valueB));
+export default function checkIfIsEquality(valueA, valueB) {
+  return Object.is(valueA, valueB);
+}
